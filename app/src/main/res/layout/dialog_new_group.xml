@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:background="@color/kamtur_background_app"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+    <EditText
+        android:id="@+id/etNameService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/Sercio"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/btnAddGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/kamtur_background_card"
+        android:text="@string/crear_grupo"/>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

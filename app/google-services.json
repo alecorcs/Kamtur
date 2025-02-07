@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "329075422522",
+    "firebase_url": "https://kamtur-b4089-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "kamtur-b4089",
+    "storage_bucket": "kamtur-b4089.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:329075422522:android:5c3f19daed9952df648c03",
+        "android_client_info": {
+          "package_name": "com.example.kamtur"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhIkwQhNM6ZlkgEYprpOwQGqtCzH602Ow"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

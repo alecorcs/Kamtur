@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/kamtur_background_app"
+    tools:context="ui.profile.EditImageProfileActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/ivProfileUpdate"
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            android:layout_gravity="center"
+            android:background="#354f60"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_user" />
+        
+        <Button
+            android:id="@+id/btnCambiarImagen"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/cambiar_imagen"
+            app:icon="@drawable/ic_select_img" />
+        <Button
+            android:id="@+id/btnActualizarImagen"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/actualizar_imagen"
+            app:icon="@drawable/ic_update" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

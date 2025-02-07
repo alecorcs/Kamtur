@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/kamtur_background_app"
+    tools:context="ui.calendar.YourCalendarActivity">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linearLayoutTop"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/kamtur_background_top_bottom"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/ibGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/kamtur_ic_style"
+            android:contentDescription="@string/group"
+            android:src="@drawable/ic_group" />
+
+        <TextView
+            android:id="@+id/tvNombreGrupo"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            tools:text="Planta 8 Par" />
+
+        <ImageButton
+            android:id="@+id/ibInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/kamtur_ic_style"
+            android:contentDescription="@string/user"
+            android:src="@drawable/ic_info" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayoutBottom"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutTop">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ivPortada"
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:contentDescription="@string/imagen_usuario"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/imagen_portada" />
+
+                <ImageView
+                    android:id="@+id/ivPerfil"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="130dp"
+                    android:background="#354f60"
+                    android:scaleType="centerCrop" />
+
+                <ImageView
+                    android:id="@+id/ivEditImg"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="130dp"
+                    android:layout_marginTop="230dp"
+                    android:src="@drawable/boton_editar" />
+
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tvTituloPerfil"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    tools:text="Perfil Usuario" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/mbVerificar"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/verificar">
+
+                </com.google.android.material.button.MaterialButton>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/id"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:textSize="18sp"
+                        tools:text="ID del Usuario" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/e_mail"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:hint="@string/e_mail"
+                        android:textSize="18sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/servicio"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvServicio"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:textSize="18sp"
+                        tools:text="Nombre del grupo" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp">
+
+                    <EditText
+                        android:id="@+id/etNombre"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/escriba_nombre"
+                        android:inputType="textPersonName|textCapWords"
+                        android:textSize="18sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp">
+
+                    <EditText
+                        android:id="@+id/etApellidos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/escriba_apellidos"
+                        android:inputType="textPersonName|textCapWords"
+                        android:textSize="18sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/btnGuardar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="@string/guardar_cambios"
+                    app:icon="@drawable/ic_save_info" />
+
+
+                <Button
+                    android:id="@+id/btnlogOut"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:backgroundTint="@color/kamtur_background_button_decline"
+                    android:text="@string/cerrar_sesion"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    app:icon="@drawable/ic_log_out" />
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </ScrollView>
+
+
+    <RelativeLayout
+        android:id="@+id/linearLayoutBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/kamtur_background_top_bottom" >
+
+            <ImageButton
+                android:id="@+id/ibCalendar"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@color/kamtur_ic_style"
+                android:contentDescription="@string/calendario"
+                android:src="@drawable/ic_calendar" />
+
+            <ImageButton
+                android:id="@+id/ibChange"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@color/kamtur_ic_style"
+                android:contentDescription="@string/cambioturno"
+                android:src="@drawable/ic_change" />
+
+            <ImageButton
+                android:id="@+id/ibNotification"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@color/kamtur_ic_style"
+                android:contentDescription="@string/notificaciones"
+                android:src="@drawable/ic_notification" />
+
+            <ImageButton
+                android:id="@+id/ibChat"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@color/kamtur_ic_style"
+                android:contentDescription="@string/chat"
+                android:src="@drawable/ic_chat" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <ImageView
+            android:id="@+id/ivNoLeido"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:background="@color/Kamtur_backgroundText_noLeido"
+            android:layout_marginTop="27dp"
+            android:layout_marginStart="270dp"
+            android:contentDescription="@string/no_leido"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

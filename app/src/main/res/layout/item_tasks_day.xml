@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="4dp"
+    app:cardCornerRadius="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingVertical="8dp"
+        android:background="@color/kamtur_background_card">
+
+        <TextView
+            android:id="@+id/tvTurnoDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="18dp"
+            android:layout_marginStart="18dp"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            tools:text="12/09/2023" />
+        <TextView
+            android:id="@+id/tvTurnoDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="18dp"
+            android:layout_marginStart="18dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            tools:text="Turno de Noche" />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

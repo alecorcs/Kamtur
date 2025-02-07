@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@color/kamtur_background_app" >
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        app:lottie_fileName="Animation_AppInfo.json"
+        app:lottie_imageAssetsFolder="assets"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/desarrollador"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_marginTop="10dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/soporte"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_marginTop="10dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/version"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/btnReturn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="@string/volver" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

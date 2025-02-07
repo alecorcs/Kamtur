@@ -1,0 +1,76 @@
+<resources>
+    <string name="app_name">Kamtur</string>
+    <string name="e_mail">E-mail</string>
+    <string name="Bienvenido">Bienvenido a Kamtur</string>
+    <string name="password">Contraseña</string>
+    <string name="inicio_sesion">Iniciar Sesión</string>
+    <string name="registrarse">Registrarse</string>
+    <string name="registrar_titulo">Regístrate</string>
+    <string name="escriba_nombre">Nombre Usuario</string>
+    <string name="escriba_apellidos"> Apellidos Usuario</string>
+    <string name="repita_password">Repita contraseña</string>
+    <string name="registrar_usuario">Registrar usuario</string>
+    <string name="group">group</string>
+    <string name="user">User</string>
+    <string name="calendario">Calendario</string>
+    <string name="cambioturno">CambioTurno</string>
+    <string name="notificaciones">Notificaciones</string>
+    <string name="chat">Chat</string>
+    <string name="fecha">Fecha dia/mes/año</string>
+    <string name="turno">Turno</string>
+    <string name="crear_turno">Crear Turno</string>
+    <string name="add_turno_btn">Añadir turno</string>
+    <string name="cerrar_sesion">Cerrar Sesion</string>
+    <string name="id">ID</string>
+    <string name="servicio">Servicio</string>
+    <string name="crear_nuevo_grupo">Crear/unirse a nuevo servicio</string>
+    <string name="Sercio">Escribe nombre servicio</string>
+    <string name="crear_grupo">Crear Grupo</string>
+    <string name="create">Crear</string>
+    <string name="cancel">Cancelar</string>
+    <string name="buscar_usuario">Buscar usuario</string>
+    <string name="imagen_usuario">Imagen Usuario</string>
+    <string name="guardar_cambios">Guardar Cambios</string>
+    <string name="cambiar_imagen">Cambiar Imagen</string>
+    <string name="actualizar_imagen">Actualizar Imagen</string>
+    <string name="elegir_imagen">Elegir Imagen</string>
+    <string name="camara">Cámara</string>
+    <string name="galeria">Galería</string>
+    <string name="imagen_perfil">Imagen de perfil</string>
+    <string name="escriba_mensaje">Escriba un mensaje</string>
+    <string name="add_imagen">Adjuntar Imagen</string>
+    <string name="send_message">Enviar mensaje</string>
+    <string name="mensajeText">Hola</string>
+    <string name="verificar">No Verificado</string>
+    <string name="en_linea">En linea</string>
+    <string name="forgotPassword">Olvidé mi contraseña</string>
+    <string name="forgotPasswordDescription">Ingese su e-mail para reestablecer contraseña</string>"
+    <string name="enviarCorreo">Enviar</string>
+    <string name="infoApp">Información de la App</string>
+    <string name="add_cambio">Añadir Cambio</string>
+    <string name="publicar_cambio">Publicar Cambio</string>
+    <string name="proponer_cambio">Proponer Cambio</string>
+    <string name="fechaTurno">dia/mes/año</string>
+    <string name="nombreTurno">Nombre Turno</string>
+    <string name="publicar">Publicar</string>
+    <string name="proponer">Proponer</string>
+    <string name="hacerProposicion">Hacer Proposición</string>
+    <string name="enEspera">Pendiente elección</string>
+    <string name="no_leido">no leido</string>
+    <string name="rechazarCambio">Rechazar</string>
+    <string name="aceptarCambio">Aceptar</string>
+    <string name="optionstabs">OptionsTabs</string>
+    <string name="eliminar">Eliminar</string>
+    <string name="leida">Leida</string>
+    <string name="descripcion">Descripción</string>
+    <string name="elimiarCambio">Eliminar Cambio</string>
+
+    <!--Desarrollador-->
+    <string name="desarrollador">Desarrollado por: Alejandro Corral</string>
+    <string name="version">Versión 1.0</string>
+    <string name="soporte">Soporte: lexcor1995@gmail.com</string>
+    <string name="volver">Volver</string>
+
+
+
+</resources>

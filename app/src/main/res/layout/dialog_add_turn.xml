@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:background="@color/kamtur_background_app"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:padding="16dp">
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/etTurn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/turno"
+        android:minHeight="48dp" />
+    <Button
+        android:id="@+id/btnAddTurn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/kamtur_background_card"
+        android:text="@string/crear_turno"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

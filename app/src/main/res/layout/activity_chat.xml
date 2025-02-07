@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/kamtur_background_app"
+    tools:context="ui.calendar.YourCalendarActivity">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linearLayoutTop"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/kamtur_background_top_bottom"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/ibGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/kamtur_ic_style"
+            android:contentDescription="@string/group"
+            android:src="@drawable/ic_group" />
+
+        <TextView
+            android:id="@+id/tvNombreGrupo"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            tools:text="Planta 8 Par" />
+
+        <ImageButton
+            android:id="@+id/ibProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/kamtur_ic_style"
+            android:contentDescription="@string/user"
+            android:src="@drawable/ic_user" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutTop"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayoutBottom"
+        app:layout_constraintEnd_toEndOf="parent" >
+        
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabMain"
+            android:layout_marginTop="70dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/optionstabs"
+            android:background="@color/kamtur_background_app" />
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewMain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"/>
+    </LinearLayout>
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/linearLayoutBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/kamtur_background_top_bottom" >
+
+            <ImageButton
+                android:id="@+id/ibCalendar"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@color/kamtur_ic_style"
+                android:contentDescription="@string/calendario"
+                android:src="@drawable/ic_calendar" />
+
+            <ImageButton
+                android:id="@+id/ibChange"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@color/kamtur_ic_style"
+                android:contentDescription="@string/cambioturno"
+                android:src="@drawable/ic_change" />
+
+            <ImageButton
+                android:id="@+id/ibNotification"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@color/kamtur_ic_style"
+                android:contentDescription="@string/notificaciones"
+                android:src="@drawable/ic_notification" />
+
+            <ImageButton
+                android:id="@+id/ibChat"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@color/kamtur_ic_style"
+                android:contentDescription="@string/chat"
+                android:src="@drawable/ic_chat" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <ImageView
+            android:id="@+id/ivNoLeido"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:background="@color/Kamtur_backgroundText_noLeido"
+            android:layout_marginTop="27dp"
+            android:layout_marginStart="270dp"
+            android:contentDescription="@string/no_leido"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

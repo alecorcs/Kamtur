@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ui.chat.message.MessageActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tbChat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/kamtur_background_card">
+
+        <ImageView
+            android:id="@+id/ivPerfilUser"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:contentDescription="@string/imagen_perfil"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_profile_chat" />
+
+        <TextView
+            android:id="@+id/tvUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/escriba_nombre"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvChat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rlSendMessage"
+        android:layout_below="@+id/tbChat"
+        android:background="@color/kamtur_background_app">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <RelativeLayout
+        android:id="@+id/rlSendMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/kamtur_background_app"
+        android:padding="8dp">
+
+        <ImageButton
+            android:id="@+id/ibAttachment"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/adjuntar_archivo"
+            android:contentDescription="@string/add_imagen" />
+
+        <EditText
+            android:id="@+id/etMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_toStartOf="@+id/ibSend"
+            android:layout_toEndOf="@+id/ibAttachment"
+            android:hint="@string/escriba_mensaje"
+            android:minHeight="48dp" />
+
+        <ImageButton
+            android:id="@+id/ibSend"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/enviar"
+            android:contentDescription="@string/send_message" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

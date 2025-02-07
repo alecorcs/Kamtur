@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="9dp"
+    android:layout_margin="5dp" >
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true">
+
+        <ImageView
+            android:id="@+id/imgPerfil"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_profile_message"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tvMensaje"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mensajeText"
+            android:textColor="@color/white"
+            android:layout_alignParentEnd="true"
+            android:textSize="18sp"
+            android:padding="8dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/background_conver_emisor"/>
+
+        <ImageView
+            android:id="@+id/imgEnviadaEmisor"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentEnd="true"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvVisto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/tvMensaje" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
