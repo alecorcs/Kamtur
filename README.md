@@ -1,6 +1,33 @@
 # Kamtur
-## Aplicación desarrollada para Android, para gestionar cambios de turnos entre profesionales con turnicidad.
-- Cuenta con calendario para ver los días de trabajo.
-- Puedes unirte a un grupo con los compañeros de trabajo y ver sus turnos. 
-- Dispone de chat para hablar con los compañeros del grupo.
-- Mercado de turnos  para publicar días que quieres librar, donde tus compañeros pueden realizar propuestas para cambiar el día de trabajo.
+
+Aplicación Android para gestionar cambios de turnos entre profesionales con turnicidad.
+
+## 🧭 Características
+
+- 📅 Calendario para ver los días de trabajo.
+- 👥 Unirse a grupos con compañeros de trabajo y ver sus turnos.
+- 💬 Chat para comunicación interna.
+- 🔁 Mercado de turnos: publica días que quieres librar y recibe propuestas para intercambiar.
+
+---
+
+## 🚀 Instalación
+
+1. **Clona este repositorio**:
+
+   ```bash
+   git clone https://github.com/tuusuario/kamtur.git
+   cd kamtur
+2. **Abre el proyecto en Android Studio.**
+
+3. 🔐 **El archivo `google-services.json` no está incluido por razones de seguridad.**
+
+   Si deseas compilar el proyecto, solicita el archivo abriendo un issue o contactando al autor.
+
+4. **Una vez tengas el archivo**:
+
+   Colócalo en el directorio:
+
+   ```bash
+   app/google-services.json
+5. **Sincroniza el proyecto y compílalo normalmente.**
